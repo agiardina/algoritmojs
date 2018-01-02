@@ -12,7 +12,6 @@ let d = require("../src/dijkstra"),
              ["e", "f", 9]]
 
 let [path,length] = d.dijkstra(graph, "a", "e");
-let passed = 0
 
 console.assert(path.join(",")==="a,c,f,e", "Path should be a,c,f,e, getting " + path.join(","))
 console.assert(length===20, "Length should be 20, getting " + length)
